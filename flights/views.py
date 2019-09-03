@@ -41,7 +41,7 @@ class CancelBooking(DestroyAPIView):
 
 
 class CreateBooking(CreateAPIView):
-	serializer_class=CreateBookingSerializer
+	serializer_class=UpdateBookingSerializer
 	
 	
 	def perform_create(self, serializer,**kwargs):
